@@ -7,9 +7,9 @@ public class question3 {
 				
 		Scanner scanner = new Scanner(System.in);
 
-		int num1 = (int)(Math.random() * 10);
-		int num2 = (int)(Math.random() * 10);
-		System.out.print("What is " + num1 + " + " + num2 + "?");
+		int num1 = (int)(Math.ceil(Math.random() * 9));
+		int num2 = (int)(Math.ceil(Math.random() * 9));
+		System.out.print("What is " + num1 + " + " + num2 + "? ");
 		int answer = scanner.nextInt();
 		
 		while(answer != num1 + num2) {
@@ -17,7 +17,7 @@ public class question3 {
 				break;
 			}else {
 				System.out.print("Wrong answer. Try again. ");
-				System.out.print("What is " + num1 + " + " + num2 + "?");
+				System.out.print("What is " + num1 + " + " + num2 + "? ");
 				answer = scanner.nextInt();
 			}
 		}
